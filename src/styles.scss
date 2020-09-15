@@ -2,7 +2,7 @@
 @import 'ag-grid-community/dist/styles/ag-grid.css';
 @import 'ag-grid-community/dist/styles/ag-theme-balham.css';
 
-// @import 'styles/_my-material-theme.scss';
+@import 'styles/_my-material-theme.scss';
 
 @font-face {
    font-family: 'Material Icons';
@@ -43,6 +43,33 @@
 
 body {
    height: 100%;
+}
+
+$primary-color: map-get($app-theme, primary);
+$accent-color: map-get($app-theme, accent);
+
+.primary-color {
+   color: mat-color($primary-color);
+}
+
+.accent-color {
+   color: mat-color($accent-color);
+}
+
+.primary-lighter-color {
+   color: mat-color($primary-color, lighter);
+}
+
+.accent-lighter-color {
+   color: mat-color($accent-color, lighter);
+}
+
+.primary-darker-color {
+   color: mat-color($primary-color, darker);
+}
+
+.accent-darker-color {
+   color: mat-color($accent-color, darker);
 }
 
 .solid-border {
