@@ -1,1 +1,190 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import 'ag-grid-community/dist/styles/ag-grid.css';
+@import 'ag-grid-community/dist/styles/ag-theme-balham.css';
+
+// @import 'styles/_my-material-theme.scss';
+
+@font-face {
+   font-family: 'Material Icons';
+   font-style: normal;
+   font-weight: 400;
+   src: url(https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+   font-family: 'Material Icons';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 24px;
+   line-height: 1;
+   letter-spacing: normal;
+   text-transform: none;
+   display: inline-block;
+   white-space: nowrap;
+   word-wrap: normal;
+   direction: ltr;
+   font-feature-settings: unset;
+   -webkit-font-feature-settings: 'liga';
+   -webkit-font-smoothing: antialiased;
+}
+
+#toasty.toasty-position-top-right {
+   top: 80px;
+   right: 20px;
+}
+
+#toasty .toast.toasty-theme-material,
+.toast-info,
+.toast-error,
+.toast-warning,
+.toast-success {
+   background-color: #5262bc !important;
+}
+
+body {
+   height: 100%;
+}
+
+.solid-border {
+   mat-dialog-container {
+      border: 10px solid #424242;
+      border-radius: 30px;
+      overflow: hidden;
+      padding: 0px;
+   }
+}
+
+.fail {
+   background-color: #e680f2 !important;
+}
+
+.details-panel-modal {
+   height: auto;
+   width: auto !important;
+   margin: auto !important;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+.cell-wrap-text {
+   white-space: normal !important;
+   font-weight: bold;
+}
+
+.analysis-configuration-size .ag-header-row {
+   background: gray;
+}
+
+.show-cell {
+   border-right: 1px solid gray !important;
+   border-top: 1px solid gray !important;
+   border-left: 1px solid gray !important;
+   background: lightgrey;
+   font-weight: bold;
+   z-index: 1000 !important;
+}
+
+.ag-row .show-cell {
+   display: flex;
+   align-items: center;
+}
+
+.empty-cell {
+   background: lightgrey;
+   border-right: 1px solid gray !important;
+   border-left: 1px solid gray !important;
+   border-bottom: 1px solid lightgray !important;
+}
+
+.dashboard-container .mat-raised-button {
+   line-height: 34px !important;
+}
+
+.mat-paginator-range-label {
+   margin: 0px 0px 0px 24px !important;
+}
+
+.ag-theme-balham .ag-root {
+   border: 2px solid #bdc3c7;
+}
+
+.ag-theme-balham {
+   font-size: 0.75em;
+}
+
+.app-navbar .mat-button-wrapper {
+   font-weight: bolder;
+}
+
+.ag-theme-balham .multiple {
+   font-size: 1.4em;
+}
+
+.red-color {
+   color: red;
+}
+
+.center-align-header .ag-header-cell-text {
+   margin: auto;
+   display: table;
+}
+
+.left-align-header .ag-header-cell-text {
+   display: table;
+}
+
+.ag-header-cell-text {
+   font-family: Roboto, sans-serif;
+   font-weight: bolder;
+}
+
+.ag-theme-balham .ag-pinned-left-header {
+   border-right: none !important;
+}
+
+.ag-cell.ag-cell-last-left-pinned:not(.ag-cell-range-right) {
+   border-right: none !important;
+}
+
+.tick text {
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
+}
+
+.mat-pseudo-checkbox-checked {
+   background: #1b1e4d;
+}
+
+.toast-top-right {
+   right: 40px;
+   top: 46px;
+}
+
+.mat-select-panel-wrap {
+   flex-basis: 0% !important;
+}
+
+.cdk-overlay-pane {
+   min-width: 0px !important;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: 2rem;
+}
+
+.owl-next {
+  right: 2rem;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+   font-family: 'fontAwesome';
+}
