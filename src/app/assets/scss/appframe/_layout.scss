@@ -1,0 +1,45 @@
+body {
+  font-size: 12px;
+  font-family: $fontFamily;
+  overflow-x: hidden;
+  color: $textColor;
+}
+
+.pageHolder {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .pageContent {
+    flex-grow: 1;
+    position: relative;
+  }
+  .mainHeader {
+    flex-shrink: 0;
+  }
+  .pageNavHolder {
+    flex-shrink: 0;
+  }
+}
+
+.mainContainer {
+  padding: 0 15px;
+  &.fluid {
+    max-width: 100%;
+  }
+}
+
+.pageNav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $borderColor;
+  padding: 15px 15px;
+  .pageNavItem {
+
+  }
+  .pageNavItem + .pageNavItem {
+    margin-left: 15px;
+  }
+}
+
+

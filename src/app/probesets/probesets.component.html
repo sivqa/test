@@ -1,19 +1,16 @@
-<div id="probesetsTable" class="full-heigth">
-  <div class="row">
-    <div class="header-container">
-      <h4 class="bolderTable">ProbeSet Summary Table</h4>
-    </div>
-    <div class="block">
+<div id="probesetsTable" class="tableHolder">
+  <div class="tableHeading">
+    <h4 class="">ProbeSet Summary Table</h4>
+    <div class="searchHolder">
       <mat-form-field appearance="legacy" class="search">
         <input matInput type="text" class="form-control" class="filter-input" placeholder="Search">
         <mat-icon matSuffix>search</mat-icon>
       </mat-form-field>
-      <button mat-raised-button class="button" color="primary" matTooltip="Copy to clipboard">
-        <!-- <fa-icon [icon]="faCopy"></fa-icon> -->
-      </button>
     </div>
   </div>
-  <ag-grid-angular [rowData]="rowData" [defaultColDef]="defaultColDef" class="ag-theme-balham full-size" [columnDefs]="columnDefs"
-    (gridReady)="onGridReady($event)">
-  </ag-grid-angular>
+  <div class="tableContent">
+    <ag-grid-angular [rowData]="rowData" [defaultColDef]="defaultColDef" class="ag-theme-balham full-size" [columnDefs]="columnDefs"
+                     (gridReady)="onGridReady($event)">
+    </ag-grid-angular>
+  </div>
 </div>
