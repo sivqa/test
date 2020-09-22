@@ -1,11 +1,9 @@
 import { Component, HostListener } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { faCopy } from '@fortawesome/free-solid-svg-icons';
-import { DetailsPanelComponent } from '../details-panel/details-panel.component';
 
 
 @Component({
-  selector: 'app-probesets',
+  selector: 'app-probesets-modal',
   templateUrl: './probesets.component.html',
   styleUrls: ['./probesets.component.scss']
 })
@@ -191,9 +189,7 @@ export class ProbesetsComponent {
     }
   ];
 
-  detailsDialogRef: MatDialogRef<DetailsPanelComponent>;
-
-  constructor(private dialog: MatDialog) { }
+  constructor() { }
 
   getData() {
     this.gridApi.setRowData(this.rowData)
@@ -209,20 +205,6 @@ export class ProbesetsComponent {
   onResize(event) {
     this.resizeColumns();
   }
-
-  async openDetailsModel(params) {
-    return new Promise<any>((resolve, reject) => {
-       resolve();
-       this.openModalDetails(params);
-    });
- }
-
- openModalDetails(params) {
-    this.detailsDialogRef = this.dialog.open(DetailsPanelComponent, {
-       width: '100%',
-       panelClass: 'details-panel-modal',
-    });
- }
 
   onGridReady(params) {
     this.gridApi = params.api;

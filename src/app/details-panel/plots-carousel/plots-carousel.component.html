@@ -1,0 +1,17 @@
+<div id="plot-carousel" class="plot-carousel wrapper">
+    <owl-carousel-o [options]="carouselOptions">
+        <ng-container *ngFor="let plotData of plotDataList">
+            <ng-template class="slide" carouselSlide [id]="plotData[0].barcode">
+                <h4 class="barcode-header">{{plotData[0].barcode}}</h4>
+                <div #dqc class="plot-container">
+                    <app-plate-view-plot  [samplesDetails]=plotData [threshold]=dqcThreshold metric=axiom_dishqc_DQC>
+                    </app-plate-view-plot>
+                </div>
+                <div #qcCallRate class="plot-container">
+                    <app-plate-view-plot [samplesDetails]=plotData [threshold]=qcCallRateThreshold metric=qc_call_rate>
+                    </app-plate-view-plot>
+                </div>
+            </ng-template>
+        </ng-container>
+    </owl-carousel-o>
+</div>

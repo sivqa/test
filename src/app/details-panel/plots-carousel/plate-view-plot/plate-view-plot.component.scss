@@ -1,0 +1,23 @@
+.header {
+   text-align: center;
+   margin-top: 1em;
+   font-weight: bold;
+}
+
+.tooltip {
+   position: absolute;
+   text-align: left;
+   width: 1em;
+   height: 0.2em;
+   padding: 0.133em;
+   margin-top: -0.333em;
+   font: 1em;
+   font-weight: bold;
+   background: #ddd;
+   pointer-events: none;
+}
+
+.plate-container {
+   float: left;
+   width: 100%;
+}

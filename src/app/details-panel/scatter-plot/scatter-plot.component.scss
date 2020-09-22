@@ -1,0 +1,47 @@
+.header {
+   text-align: center;
+   margin-top: 1em;
+   font-weight: bold;
+}
+
+.axis path,
+.axis line {
+   fill: none;
+   stroke: #000;
+   shape-rendering: crispEdges;
+}
+
+.tooltip {
+   position: absolute;
+   text-align: left;
+   width: 1em;
+   height: 0.2em;
+   padding: 0.133em;
+   margin-top: -0.333em;
+   font: 1em;
+   font-weight: bold;
+   background: #ddd;
+   pointer-events: none;
+}
+
+.dot {
+   stroke: #000;
+   stroke: #ffffff;
+}
+
+.tick line {
+   opacity: 0.2;
+}
+
+#container {
+   float: left;
+}
+
+#legend {
+   float: left;
+}
+
+.label {
+   font-size: 24px;
+   font-weight: bold;
+}

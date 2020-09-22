@@ -9,6 +9,7 @@ import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
 import { MyMaterialModule } from './my-material-module';
 import { ProbesetsModule } from './probesets/probesets.module';
+import { DetailsPanelModule } from './details-panel/details-panel.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProbesetsModule } from './probesets/probesets.module';
     BrowserModule,
     MyMaterialModule,
     AppRoutingModule,
-    ProbesetsModule
+    ProbesetsModule,
+    DetailsPanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

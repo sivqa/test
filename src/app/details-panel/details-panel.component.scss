@@ -1,0 +1,101 @@
+.row {
+   width: 100%;
+   margin: 0px;
+}
+
+.download-block {
+   margin-left: auto;
+   margin-right: 15px;
+}
+
+.analisis-summary-block {
+   margin-right: 50px;
+}
+
+.probeset-block {
+   margin-right: 30px;
+}
+
+.text {
+   float: left;
+}
+
+.gray {
+   color: gray;
+}
+
+.plates {
+   margin-top: 1em;
+}
+
+.samples-qc-details {
+   height: 450px;
+   width: calc(80vw - 70px);
+   margin-top: 1.5em;
+   min-width: 510px;
+}
+
+.card {
+   padding: 0;
+   margin-bottom: 1vh;
+}
+
+.plots-carousel-card {
+   margin-top: 2em;
+}
+
+.scatter-plot {
+   width: 100%;
+   left: 30px;
+   margin-top: 1em;
+   text-align: center;
+}
+
+.scatter-plot-card {
+   width: calc(80vw - 70px);
+   min-width: 510px;
+}
+
+.samples-qc-details-table {
+   height: 500px;
+   width: 100%;
+   margin-top: 1.5em;
+}
+
+.probesets {
+   height: 450px;
+   width: calc(80vw - 70px);
+   margin-top: 1.5em;
+   min-width: 510px;
+}
+
+.probesets-table {
+   height: 500px;
+   width: 100%;
+   margin-top: 1.5em;
+}
+
+.link {
+   cursor: pointer;
+   color: blue;
+   text-decoration: underline;
+}
+
+.log-file-link {
+   margin-top: 1.5em;
+}
+
+.expanded-area {
+   margin-left: 10px;
+   position: relative;
+}
+
+.download-button {
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
+.download-button-container {
+   width: 64px;
+}

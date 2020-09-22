@@ -1,0 +1,25 @@
+<div #expandedArea class="expanded-area">
+  <div class="row">
+    <div class="analisis-summary-block">
+      <app-analysis-summary></app-analysis-summary>
+      <h6>Total Number of Markers: 1234</h6>
+      <h6>Number of Best and Recommended: 567</h6>
+      <h6>Total Number of ProbeSets: 8900</h6>
+    </div>
+    <div class="download-button-container"></div>
+    <button mat-raised-button class="download-button" color="primary" matTooltip="Download Batch">
+      <fa-icon [icon]="faCloudDownloadAlt"></fa-icon>
+    </button>
+    <div class="probesets-table">
+      <mat-card class="probesets">
+        <app-probesets-modal></app-probesets-modal>
+      </mat-card>
+    </div>
+    <div class="plots-carousel-card">
+      <app-plots-carousel></app-plots-carousel>
+    </div>
+    <div class="row scatter-plot">
+      <app-scatter-plot></app-scatter-plot>
+    </div>
+  </div>
+</div>
