@@ -1,30 +1,6 @@
 .full-size {
-   width: 100%;
-   height: calc(100% - 55px);
-   margin-bottom: 20px;
-}
-
-.row {
-   height: 70px;
-   width: 100%;
-   text-align: center;
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
-.bolderTables {
-   font-weight: bolder;
-   text-align: left;
-}
-
-.header-container {
-   margin: 21px 0px 5px 33px;
-}
-
-.full-heigth {
-   height: 100%;
-   display: block;
-   width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 :host {
@@ -36,18 +12,3 @@
    top: 0;
 }
 
-.block {
-   position: absolute;
-   right: 5px;
-   top: 7px;
-}
-
-.search {
-   width: 20vw;
-   margin-right: 0.6vw;
-}
-
-.button {
-   margin-right: 0.6vw;
-   margin-left: 0.6vw;
-}

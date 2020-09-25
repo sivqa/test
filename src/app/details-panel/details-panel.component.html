@@ -1,24 +1,35 @@
-<div #expandedArea class="expanded-area">
-  <div class="row">
-    <div class="analisis-summary-block">
-      <app-analysis-summary></app-analysis-summary>
-      <h6>Total Number of Markers: 1234</h6>
-      <h6>Number of Best and Recommended: 567</h6>
-      <h6>Total Number of ProbeSets: 8900</h6>
+<div #expandedArea class="expanded-area tableDetailsHolder">
+
+  <div class="">
+    <div class="modalTableBlock">
+      <div class="mtbHeading">
+        <h4 class="header">Analysis Summary</h4>
+        <button mat-raised-button class="" color="primary" matTooltip="Download Batch">
+          <fa-icon [icon]="faCloudDownloadAlt"></fa-icon>
+        </button>
+      </div>
+      <div class="analysis-summary-wrapper">
+        <div class="as-block">
+          <app-analysis-summary></app-analysis-summary>
+        </div>
+        <div class="as-block">
+          <div class="tableDetails">
+            <p>Total Number of Markers: <span class="qnt">1234</span></p>
+            <p>Number of Best and Recommended: <span class="qnt">567</span></p>
+            <p>Total Number of ProbeSets: <span class="qnt">8900</span></p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="download-button-container"></div>
-    <button mat-raised-button class="download-button" color="primary" matTooltip="Download Batch">
-      <fa-icon [icon]="faCloudDownloadAlt"></fa-icon>
-    </button>
-    <div class="probesets-table">
-      <mat-card class="probesets">
+    <div class="modalTableBlock ">
+      <div class="modalTableContainer">
         <app-probesets-modal></app-probesets-modal>
-      </mat-card>
+      </div>
     </div>
-    <div class="plots-carousel-card">
+    <div class="modalTableBlock">
       <app-plots-carousel></app-plots-carousel>
     </div>
-    <div class="row scatter-plot">
+    <div class="modalTableBlock">
       <app-scatter-plot></app-scatter-plot>
     </div>
   </div>

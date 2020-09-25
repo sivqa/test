@@ -219,7 +219,9 @@ export class ProbesetsComponent {
 
  openModalDetails(params) {
     this.detailsDialogRef = this.dialog.open(DetailsPanelComponent, {
-       width: '100%',
+       width: 'calc(100% - 60px)',
+       maxWidth: '1440px',
+       maxHeight: 'calc(100vh - 60px)',
        panelClass: 'details-panel-modal',
     });
  }

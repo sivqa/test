@@ -87,14 +87,6 @@ $accent-color: map-get($app-theme, accent);
    background-color: #e680f2 !important;
 }
 
-.details-panel-modal {
-   height: auto;
-   width: auto !important;
-   margin: auto !important;
-   overflow-y: scroll;
-   overflow-x: hidden;
-}
-
 .cell-wrap-text {
    white-space: normal !important;
    font-weight: bold;
