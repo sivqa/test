@@ -17,4 +17,58 @@
     flex-grow: 1;
     position: relative;
   }
+  .ag-theme-balham .ag-root {
+    border: 1px solid #eeeded;
+    font-size: 12px;
+  }
+}
+
+.modalTableBlock {
+  padding-bottom: 30px;
+  .ag-theme-balham .ag-root {
+    border: 1px solid #eeeded;
+    font-size: 12px;
+  }
+}
+
+.modalTableContainer {
+  height: 500px;
+  position: relative;
+}
+
+.modalTableBlock + .modalTableBlock {
+  padding: 30px 0;
+  border-top: 1px solid #eeeded;
+}
+
+.analysis-summary-wrapper {
+  display: flex;
+  margin: -15px;
+  flex-wrap: wrap;
+  .as-block {
+    padding: 15px;
+  }
+}
+
+.mtbHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  h4 {
+    font-size: 22px;
+  }
+}
+
+.tableDetails {
+  p {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  p + p {
+    margin-top: 10px;
+  }
+  .qnt {
+    font-weight: bold;
+  }
 }
