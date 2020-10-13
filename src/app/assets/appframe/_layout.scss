@@ -34,16 +34,9 @@ body {
   align-items: center;
   border-bottom: 1px solid $borderColor;
   padding: 15px 15px;
-  .pageNavItem {
-
-  }
   .pageNavItem + .pageNavItem {
     margin-left: 15px;
   }
-}
-
-.modalTableBlock {
-  padding-bottom: 30px;
 }
 
 .modalTableContainer {
@@ -74,15 +67,13 @@ body {
     line-height: 36px;
     font-size: 22px;
   }
-  // border: 2px solid #bdc3c7
-
 }
 
 .mtbHeadingCenter {
   text-align: center;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   h4 {
     line-height: 36px;
     font-size: 22px;
