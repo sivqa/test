@@ -31,6 +31,17 @@
       text-align: center;
       font-size: 18px;
       font-weight: bold;
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .mainHeader {
+    .mainHeaderWrapper {
+      .centerPart {
+        display: block;
+      }
     }
   }
 }
